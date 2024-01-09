@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css"/>
     <title>fitness program</title>
   </head>
   <body>
@@ -12,337 +12,183 @@
     <form id="form-sport" method="post">
       <fieldset class="questionnaire">
         <legend>Informations générales</legend>
-        <br />
+        <br>
 
         <!-- age -->
-        <label>Quel est votre âge ?</label><br />
-        <input type="radio" id="age--18" name="age" value="-18" />
-        <label for="age--18">Moins de 18 ans</label><br />
+        <label>Quel est votre âge ?</label><br>
+        <input type="radio" id="age--18" name="age" value="-18"/>
+        <label for="age--18">Moins de 18 ans</label><br>
 
-        <input type="radio" id="age-18-24" name="age" value="18-24" />
-        <label for="age-18-24">18-24 ans</label><br />
+        <input type="radio" id="age-18-24" name="age" value="18-24"/>
+        <label for="age-18-24">18-24 ans</label><br>
 
-        <input type="radio" id="age-25-34" name="age" value="25-34" />
-        <label for="age-25-34">25-34 ans</label><br />
+        <input type="radio" id="age-25-34" name="age" value="25-34"/>
+        <label for="age-25-34">25-34 ans</label><br>
 
-        <input type="radio" id="age-35-44" name="age" value="35-44" />
-        <label for="age-35-44">35-44 ans</label><br />
+        <input type="radio" id="age-35-44" name="age" value="35-44"/>
+        <label for="age-35-44">35-44 ans</label><br>
 
-        <input type="radio" id="age-45-54" name="age" value="45-54" />
-        <label for="age-45-54">45-54 ans</label><br />
+        <input type="radio" id="age-45-54" name="age" value="45-54"/>
+        <label for="age-45-54">45-54 ans</label><br>
 
-        <input type="radio" id="age-55+" name="age" value="55+" />
-        <label for="age-55+">55 ans et plus</label><br /><br />
+        <input type="radio" id="age-55+" name="age" value="55+"/>
+        <label for="age-55+">55 ans et plus</label><br><br>
 
         <!-- sexe -->
-        <label>Quel est votre sexe ?</label><br />
-        <input type="radio" id="sexe-homme" name="sexe" value="Homme" />
-        <label for="sexe-homme">Homme</label><br />
+        <label>Quel est votre sexe ?</label><br>
+        <input type="radio" id="sexe-homme" name="sexe" value="Homme"/>
+        <label for="sexe-homme">Homme</label><br>
 
-        <input type="radio" id="sexe-femme" name="sexe" value="Femme" />
-        <label for="sexe-femme">Femme</label><br />
+        <input type="radio" id="sexe-femme" name="sexe" value="Femme"/>
+        <label for="sexe-femme">Femme</label><br>
 
-        <input type="radio" id="sexe-autre" name="sexe" value="Autre" />
-        <label for="sexe-autre">Autre</label><br /><br />
+        <input type="radio" id="sexe-autre" name="sexe" value="Autre"/>
+        <label for="sexe-autre">Autre</label><br><br>
 
         <!-- objectif principal -->
-        <label>Quel est votre objectif principal ?</label><br />
-        <input
-          type="radio"
-          id="objectif-poids"
-          name="objectif"
-          value="weightLoss"
-        />
-        <label for="objectif-poids">Perte de poids</label><br />
+        <label>Quel est votre objectif principal ?</label><br>
+        <input type="radio" id="objectif-poids" name="objectif" value="weightLoss" required/>
+        <label for="objectif-poids">Perte de poids</label><br>
 
-        <input
-          type="radio"
-          id="objectif-muscle"
-          name="objectif"
-          value="muscleGain"
-        />
-        <label for="objectif-muscle">Gain de masse musculaire</label><br />
+        <input type="radio" id="objectif-muscle" name="objectif" value="muscleGain" required/>
+        <label for="objectif-muscle">Gain de masse musculaire</label><br>
 
-        <input
-          type="radio"
-          id="objectif-tonification"
-          name="objectif"
-          value="toning"
-        />
-        <label for="objectif-tonification">Tonification</label><br />
+        <input type="radio" id="objectif-tonification" name="objectif" value="toning" required/>
+        <label for="objectif-tonification">Tonification</label><br>
 
-        <input
-          type="radio"
-          id="objectif-performance"
-          name="objectif"
-          value="performanceImprovement"
-        />
-        <label for="objectif-performance">Amélioration de la performance</label
-        ><br /><br />
+        <input type="radio" id="objectif-performance"name="objectif" value="performanceImprovement" required/>
+        <label for="objectif-performance">Amélioration de la performance</label><br><br>
       </fieldset>
 
       <!-- État de santé -->
       <fieldset>
         <legend>État de santé</legend>
-        <br />
+        <br>
 
         <!-- antécédents médicaux -->
-        <label>Avez-vous des antécédents médicaux ?</label><br />
-        <input
-          type="radio"
-          id="antecedents-medicaux-oui"
-          name="antecedents-medicaux"
-          value="Oui"
-        />
-        <label for="antecedents-medicaux-oui">Oui</label><br />
+        <label>Avez-vous des antécédents médicaux ?</label><br>
+        <input type="radio" id="antecedents-medicaux-oui" name="antecedents-medicaux" value="Oui"/>
+        <label for="antecedents-medicaux-oui">Oui</label><br>
 
-        <input
-          type="radio"
-          id="antecedents-medicaux-non"
-          name="antecedents-medicaux"
-          value="Non"
-        />
-        <label for="antecedents-medicaux-non">Non</label><br /><br />
+        <input type="radio" id="antecedents-medicaux-non" name="antecedents-medicaux" value="Non"/>
+        <label for="antecedents-medicaux-non">Non</label><br><br>
 
         <!-- type d'antécédents médicaux' -->
-        <label>Si oui, veuillez préciser :</label><br />
-        <input
-          type="checkbox"
-          id="type-hypertension"
-          name="type"
-          value="Hypertension"
-        />
-        <label for="type-hypertension">Hypertension</label><br />
+        <label>Si oui, veuillez préciser :</label><br>
+        <input type="checkbox" id="type-hypertension" name="type" value="Hypertension"/>
+        <label for="type-hypertension">Hypertension</label><br>
 
-        <input type="checkbox" id="type-diabete" name="type" value="Diabète" />
-        <label for="type-diabete">Diabète</label><br />
+        <input type="checkbox" id="type-diabete" name="type" value="Diabète"/>
+        <label for="type-diabete">Diabète</label><br>
 
-        <input
-          type="checkbox"
-          id="type-cardiaque"
-          name="type"
-          value="Problèmes cardiaques"
-        />
-        <label for="type-cardiaque">Problèmes cardiaques</label><br />
+        <input type="checkbox" id="type-cardiaque" name="type" value="Problèmes cardiaques"/>
+        <label for="type-cardiaque">Problèmes cardiaques</label><br>
 
-        <input
-          type="checkbox"
-          id="type-articulaire"
-          name="type"
-          value="Problèmes articulaires"
-        />
-        <label for="type-articulaire">Problèmes articulaires</label><br />
+        <input type="checkbox" id="type-articulaire" name="type" value="Problèmes articulaires"/>
+        <label for="type-articulaire">Problèmes articulaires</label><br>
 
-        <input type="checkbox" id="type-autre" name="type" value="Autre" />
+        <input type="checkbox" id="type-autre" name="type" value="Autre"/>
         <label for="type-autre">Autre :</label>
-        <input
-          type="text"
-          id="type-autre-texte"
-          name="type-autre-texte"
-          placeholder="Précisez votre condition"
-        />
-        <br /><br />
+        <input type="text" id="type-autre-texte" name="type-autre-texte" placeholder="Précisez votre antécédent"/>
+        <br><br>
 
         <!-- médicaments -->
-        <label>Prenez-vous des médicaments régulièrement ?</label><br />
-        <input
-          type="radio"
-          id="medicaments-oui"
-          name="medicaments"
-          value="Oui"
-        />
-        <label for="medicaments-oui">Oui</label><br />
+        <label>Prenez-vous des médicaments régulièrement ?</label><br>
+        <input type="radio" id="medicaments-oui" name="medicaments" value="Oui"/>
+        <label for="medicaments-oui">Oui</label><br>
 
-        <input
-          type="radio"
-          id="medicaments-non"
-          name="medicaments"
-          value="Non"
-        />
-        <label for="medicaments-non">Non</label><br /><br />
+        <input type="radio" id="medicaments-non" name="medicaments" value="Non"/>
+        <label for="medicaments-non">Non</label><br><br>
 
         <!-- fumer -->
-        <label>Fumez-vous ?</label><br />
-        <input type="radio" id="fumer-oui" name="fumer" value="Oui" />
-        <label for="fumer-oui">Oui</label><br />
+        <label>Fumez-vous ?</label><br>
+        <input type="radio" id="fumer-oui" name="fumer" value="Oui"/>
+        <label for="fumer-oui">Oui</label><br>
 
-        <input type="radio" id="fumer-non" name="fumer" value="Non" />
-        <label for="fumer-non">Non</label><br /><br />
+        <input type="radio" id="fumer-non" name="fumer" value="Non"/>
+        <label for="fumer-non">Non</label><br><br>
 
         <!-- restrictions alimentaires/allergies -->
-        <label>Avez-vous des restrictions alimentaires ou des allergies ?</label
-        ><br />
-        <input type="radio" id="allergies-oui" name="allergies" value="Oui" />
-        <label for="allergies-oui">Oui</label><br />
+        <label>Avez-vous des restrictions alimentaires ou des allergies ?</label><br>
+        <input type="radio" id="allergies-oui" name="allergies" value="Oui"/>
+        <label for="allergies-oui">Oui</label><br>
 
-        <input type="radio" id="allergies-non" name="allergies" value="Non" />
-        <label for="allergies-non">Non</label><br /><br />
+        <input type="radio" id="allergies-non" name="allergies" value="Non"/>
+        <label for="allergies-non">Non</label><br><br>
 
         <!-- précision restrictions alimentaires/allergies -->
-        <label>Si oui, veuillez préciser :</label><br />
-        <input
-          type="checkbox"
-          id="precision-allergie-gluten"
-          name="precision-allergie"
-          value="Allergie au gluten"
-        />
-        <label for="precision-allergie-gluten">Allergie au gluten</label><br />
+        <label>Si oui, veuillez préciser :</label><br>
+        <input type="checkbox" id="precision-allergie-gluten"name="precision-allergie" value="Allergie au gluten"/>
+        <label for="precision-allergie-gluten">Allergie au gluten</label><br>
 
-        <input
-          type="checkbox"
-          id="precision-allergie-lait"
-          name="precision-allergie"
-          value="Allergie aux produits laitiers"
-        />
-        <label for="precision-allergie-lait"
-          >Allergie aux produits laitiers</label
-        ><br />
+        <input type="checkbox" id="precision-allergie-lait" name="precision-allergie" value="Allergie aux produits laitiers"/>
+        <label for="precision-allergie-lait">Allergie aux produits laitiers</label><br>
 
-        <input
-          type="checkbox"
-          id="vegetarien"
-          name="precision-allergie"
-          value="Végétarien(ne)"
-        />
-        <label for="vegetarien">Végétarien(ne)</label><br />
+        <input type="checkbox" id="vegetarien" name="precision-allergie" value="Végétarien(ne)"/>
+        <label for="vegetarien">Végétarien(ne)</label><br>
 
-        <input
-          type="checkbox"
-          id="vegetalien"
-          name="precision-allergie"
-          value="Végétalien(ne)"
-        />
-        <label for="vegetalien">Végétalien(ne)</label><br />
+        <input type="checkbox" id="vegetalien" name="precision-allergie" value="Végétalien(ne)"/>
+        <label for="vegetalien">Végétalien(ne)</label><br>
 
-        <input
-          type="checkbox"
-          id="precision-allergie-autre"
-          name="precision-allergie"
-          value="Autre"
-        />
+        <input type="checkbox" id="precision-allergie-autre" name="precision-allergie" value="Autre"/>
         <label for="precision-allergie-autre">Autre :</label>
-        <input
-          type="text"
-          id="allergie-autre-texte"
-          name="allergie-autre-texte"
-          placeholder="Précisez votre allergie ou restriction"
-        />
-        <br /><br />
+        <input type="text" id="allergie-autre-texte" name="allergie-autre-texte" placeholder="Précisez votre allergie ou restriction"/>
+        <br><br>
       </fieldset>
 
       <!-- Niveau d'activité physique -->
       <fieldset>
         <legend>Niveau d'activité physique</legend>
-        <br />
+        <br>
 
         <!-- fréquence actuelle sport -->
-        <label>À quelle fréquence faites-vous de l'exercice ?</label><br />
-        <input
-          type="radio"
-          id="frequence-actuelle-jamais"
-          name="frequence-actuelle"
-          value="Jamais"
-        />
-        <label for="frequence-actuelle-jamais">Jamais</label><br />
+        <label>À quelle fréquence faites-vous de l'exercice ?</label><br>
+        <input type="radio" id="frequence-actuelle-jamais" name="frequence-actuelle" value="Jamais"/>
+        <label for="frequence-actuelle-jamais">Jamais</label><br>
 
-        <input
-          type="radio"
-          id="frequence-actuelle-1-2"
-          name="frequence-actuelle"
-          value="1-2 fois"
-        />
-        <label for="frequence-actuelle-1-2">1-2 fois par semaine</label><br />
+        <input type="radio" id="frequence-actuelle-1-2" name="frequence-actuelle" value="1-2 fois"/>
+        <label for="frequence-actuelle-1-2">1-2 fois par semaine</label><br>
 
-        <input
-          type="radio"
-          id="frequence-actuelle-3-4"
-          name="frequence-actuelle"
-          value="3-4 fois"
-        />
-        <label for="frequence-actuelle-3-4">3-4 fois par semaine</label><br />
+        <input type="radio" id="frequence-actuelle-3-4" name="frequence-actuelle" value="3-4 fois"/>
+        <label for="frequence-actuelle-3-4">3-4 fois par semaine</label><br>
 
-        <input
-          type="radio"
-          id="frequence-actuelle-5+"
-          name="frequence-actuelle"
-          value="5+ fois"
-        />
+        <input type="radio" id="frequence-actuelle-5+" name="frequence-actuelle" value="5+ fois"/>
         <label for="frequence-actuelle-5+">5 fois ou plus par semaine</label
-        ><br /><br />
+        ><br><br>
 
         <!-- type d'exercice pratiqué -->
         <label>Quel type d'exercice pratiquez-vous le plus souvent ?</label
-        ><br />
-        <input
-          type="radio"
-          id="exercice-pratique-cardio"
-          name="exercice-pratique"
-          value="Cardio (course, vélo, natation)"
-        />
+        ><br>
+        <input type="radio" id="exercice-pratique-cardio" name="exercice-pratique" value="Cardio (course, vélo, natation)"/>
         <label for="exercice-pratique-cardio"
           >Cardio (course, vélo, natation)</label
-        ><br />
+        ><br>
 
-        <input
-          type="radio"
-          id="exercice-pratique-musculation"
-          name="exercice-pratique"
-          value="Musculation"
-        />
-        <label for="exercice-pratique-musculation">Musculation</label><br />
+        <input type="radio" id="exercice-pratique-musculation" name="exercice-pratique" value="Musculation"/>
+        <label for="exercice-pratique-musculation">Musculation</label><br>
 
-        <input
-          type="radio"
-          id="exercice-pratique-sports-collectifs"
-          name="exercice-pratique"
-          value="Sports collectifs"
-        />
+        <input type="radio" id="exercice-pratique-sports-collectifs" name="exercice-pratique" value="Sports collectifs"/>
         <label for="exercice-pratique-sports-collectifs"
           >Sports collectifs</label
-        ><br />
+        ><br>
 
-        <input
-          type="radio"
-          id="exercice-pratique-yoga-pilates"
-          name="exercice-pratique"
-          value="Yoga/Pilates"
-        />
-        <label for="exercice-pratique-yoga-pilates">Yoga/Pilates</label><br />
+        <input type="radio" id="exercice-pratique-yoga-pilates" name="exercice-pratique" value="Yoga/Pilates"/>
+        <label for="exercice-pratique-yoga-pilates">Yoga/Pilates</label><br>
 
-        <input
-          type="radio"
-          id="exercice-pratique-sports-combat"
-          name="exercice-pratique"
-          value="Sports de combat"
-        />
+        <input type="radio" id="exercice-pratique-sports-combat" name="exercice-pratique" value="Sports de combat"/>
         <label for="exercice-pratique-sports-combat">Sports de combat</label
-        ><br /><br />
+        ><br><br>
 
         <!-- expérience en musculation -->
-        <label>Avez-vous une expérience en musculation ?</label><br />
-        <input
-          type="radio"
-          id="experience-debutant"
-          name="experience"
-          value="Débutant(e)"
-        />
-        <label for="experience-debutant">Débutant(e)</label><br />
+        <label>Avez-vous une expérience en musculation ?</label><br>
+        <input type="radio" id="experience-debutant" name="experience" value="Débutant(e)"/>
+        <label for="experience-debutant">Débutant(e)</label><br>
 
-        <input
-          type="radio"
-          id="experience-intermediaire"
-          name="experience"
-          value="Intermédiaire"
-        />
-        <label for="experience-intermediaire">Intermédiaire</label><br />
+        <input type="radio" id="experience-intermediaire" name="experience" value="Intermédiaire"/>
+        <label for="experience-intermediaire">Intermédiaire</label><br>
 
-        <input
-          type="radio"
-          id="experience-avance"
-          name="experience"
-          value="Avancé(e)"
-        />
-        <label for="experience-avance">Avancé(e)</label><br /><br />
+        <input type="radio" id="experience-avance" name="experience" value="Avancé(e)"/>
+        <label for="experience-avance">Avancé(e)</label><br><br>
       </fieldset>
 
       <!-- Préférences et contraintes -->
@@ -353,214 +199,114 @@
         <label
           >Préférez-vous des séances d'entraînement longues et intenses ou
           courtes et intenses ?</label
-        ><br />
-        <input type="radio" id="seance-longue" name="seance" value="Longue" />
-        <label for="seance-longue">Longues et intenses</label><br />
+        ><br>
+        <input type="radio" id="seance-longue" name="seance" value="Longue"/>
+        <label for="seance-longue">Longues et intenses</label><br>
 
-        <input type="radio" id="seance-courte" name="seance" value="Courte" />
-        <label for="seance-courte">Courtes et intenses</label><br /><br />
+        <input type="radio" id="seance-courte" name="seance" value="Courte"/>
+        <label for="seance-courte">Courtes et intenses</label><br><br>
 
         <!-- durée idéale -->
         <label
           >Quelle est la durée idéale pour une séance d'entraînement ?</label
-        ><br />
-        <input
-          type="radio"
-          id="duree-moins-30"
-          name="duree"
-          value="Moins de 30 minutes"
-        />
-        <label for="duree-moins-30">Moins de 30 minutes</label><br />
+        ><br>
+        <input type="radio" id="duree-moins-30" name="duree" value="30" required/>
+        <label for="duree-moins-30">Moins de 30 minutes</label><br>
 
-        <input
-          type="radio"
-          id="duree-30-45"
-          name="duree"
-          value="30-45 minutes"
-        />
-        <label for="duree-30-45">30-45 minutes</label><br />
+        <input type="radio" id="duree-30-45" name="duree" value="45" required/>
+        <label for="duree-30-45">30-45 minutes</label><br>
 
-        <input
-          type="radio"
-          id="duree-45-60"
-          name="duree"
-          value="45-60 minutes"
-        />
-        <label for="duree-45-60">45-60 minutes</label><br />
+        <input type="radio" id="duree-45-60" name="duree" value="60" required/>
+        <label for="duree-45-60">45-60 minutes</label><br>
 
-        <input
-          type="radio"
-          id="duree-60-90"
-          name="duree"
-          value="60-90 minutes"
-        />
-        <label for="duree-60-90">60-90 minutes</label><br />
+        <input type="radio" id="duree-60-90" name="duree" value="90" required/>
+        <label for="duree-60-90">60-90 minutes</label><br>
 
-        <input
-          type="radio"
-          id="duree-plus-90"
-          name="duree"
-          value="Plus de 90 minutes"
-        />
-        <label for="duree-plus-90">Plus de 90 minutes</label><br /><br />
+        <input type="radio" id="duree-plus-90" name="duree" value="120" required/>
+        <label for="duree-plus-90">Plus de 90 minutes</label><br><br>
 
         <!-- fréquence souhaitée sport -->
         <label>À quelle fréquence souahaitez-vous faire de l'exercice ?</label
-        ><br />
-        <input
-          type="radio"
-          id="frequence-souhaitee-1"
-          name="frequence-souhaitee"
-          value="1"
-        />
-        <label for="frequence-souhaitee-1">1 fois par semaine</label><br />
+        ><br>
+        <input type="radio" id="frequence-souhaitee-1" name="frequence-souhaitee" value="1" required/>
+        <label for="frequence-souhaitee-1">1 fois par semaine</label><br>
 
-        <input
-          type="radio"
-          id="frequence-souhaitee-2"
-          name="frequence-souhaitee"
-          value="2"
-        />
-        <label for="frequence-souhaitee-2">2 fois par semaine</label><br />
+        <input type="radio" id="frequence-souhaitee-2" name="frequence-souhaitee" value="2" required/>
+        <label for="frequence-souhaitee-2">2 fois par semaine</label><br>
 
-        <input
-          type="radio"
-          id="frequence-souhaitee-3"
-          name="frequence-souhaitee"
-          value="3"
-        />
-        <label for="frequence-souhaitee-3">3 fois par semaine</label><br />
+        <input type="radio" id="frequence-souhaitee-3" name="frequence-souhaitee" value="3" required/>
+        <label for="frequence-souhaitee-3">3 fois par semaine</label><br>
 
-        <input
-          type="radio"
-          id="frequence-souhaitee-4"
-          name="frequence-souhaitee"
-          value="4"
-        />
-        <label for="frequence-souhaitee-4">4 fois par semaine</label><br />
+        <input type="radio" id="frequence-souhaitee-4" name="frequence-souhaitee" value="4" required/>
+        <label for="frequence-souhaitee-4">4 fois par semaine</label><br>
 
-        <input
-          type="radio"
-          id="frequence-souhaitee-5"
-          name="frequence-souhaitee"
-          value="5"
-        />
-        <label for="frequence-souhaitee-5">5 fois par semaine</label><br />
+        <input type="radio" id="frequence-souhaitee-5" name="frequence-souhaitee" value="5" required/>
+        <label for="frequence-souhaitee-5">5 fois par semaine</label><br>
 
-        <input
-          type="radio"
-          id="frequence-souhaitee-6"
-          name="frequence-souhaitee"
-          value="6"
-        />
-        <label for="frequence-souhaitee-6">6 fois par semaine</label><br />
+        <input type="radio" id="frequence-souhaitee-6" name="frequence-souhaitee" value="6" required/>
+        <label for="frequence-souhaitee-6">6 fois par semaine</label><br>
 
-        <input
-          type="radio"
-          id="frequence-souhaitee-7"
-          name="frequence-souhaitee"
-          value="7"
-        />
+        <input type="radio" id="frequence-souhaitee-7" name="frequence-souhaitee" value="7" required/>
         <label for="frequence-souhaitee-7">7 fois par semaine</label
-        ><br /><br />
+        ><br><br>
 
         <!-- abonnement -->
         <label
           >Disposez-vous d'un d'un abonnement dans une salle de sport ?</label
-        ><br />
-        <input type="radio" id="abonnement-oui" name="abonnement" value="Oui" />
-        <label for="abonnement-oui">Oui</label><br />
+        ><br>
+        <input type="radio" id="abonnement-oui" name="abonnement" value="Oui"/>
+        <label for="abonnement-oui">Oui</label><br>
 
-        <input type="radio" id="abonnement-non" name="abonnement" value="Non" />
-        <label for="abonnement-non">Non</label><br /><br />
+        <input type="radio" id="abonnement-non" name="abonnement" value="Non"/>
+        <label for="abonnement-non">Non</label><br><br>
 
         <!-- équipement pour sport à domicile -->
         <label
           >Si non, disposez-vous d'un équipement de musculation à domicile
           ?</label
-        ><br />
-        <input type="radio" id="equipement-oui" name="equipement" value="Oui" />
-        <label for="equipement-oui">Oui</label><br />
+        ><br>
+        <input type="radio" id="equipement-oui" name="equipement" value="Oui"/>
+        <label for="equipement-oui">Oui</label><br>
 
-        <input type="radio" id="equipement-non" name="equipement" value="Non" />
-        <label for="equipement-non">Non</label><br /><br />
+        <input type="radio" id="equipement-non" name="equipement" value="Non"/>
+        <label for="equipement-non">Non</label><br><br>
 
         <!-- préférences exercices/groupes musculaires -->
         <label
           >Avez-vous des préférences concernant les types d'exercices ou les
           groupes musculaires à cibler ?</label
-        ><br />
-        <input
-          type="radio"
-          id="preferences-oui"
-          name="preferences"
-          value="Oui"
-        />
-        <label for="preferences-oui">Oui</label><br />
+        ><br>
+        <input type="radio" id="preferences-oui" name="preferences" value="Oui"/>
+        <label for="preferences-oui">Oui</label><br>
 
-        <input
-          type="radio"
-          id="preferences-non"
-          name="preferences"
-          value="Non"
-        />
-        <label for="preferences-non">Non</label><br /><br />
+        <input type="radio" id="preferences-non" name="preferences" value="Non"/>
+        <label for="preferences-non">Non</label><br><br>
 
         <!-- précision préférences exercices/groupes musculaires -->
-        <label>Si oui, veuillez préciser :</label><br />
-        <input
-          type="checkbox"
-          id="exercice-jambes"
-          name="exercice"
-          value="Exercices pour les jambes"
-        />
-        <label for="exercice-jambes">Exercices pour les jambes</label><br />
+        <label>Si oui, veuillez préciser :</label><br>
+        <input type="checkbox" id="exercice-jambes" name="exercice" value="Exercices pour les jambes"/>
+        <label for="exercice-jambes">Exercices pour les jambes</label><br>
 
-        <input
-          type="checkbox"
-          id="exercice-dos"
-          name="exercice"
-          value="Exercices pour le dos"
-        />
-        <label for="exercice-dos">Exercices pour le dos</label><br />
+        <input type="checkbox" id="exercice-dos" name="exercice" value="Exercices pour le dos"/>
+        <label for="exercice-dos">Exercices pour le dos</label><br>
 
-        <input
-          type="checkbox"
-          id="exercice-bras"
-          name="exercice"
-          value="Exercices pour les bras"
-        />
-        <label for="exercice-bras">Exercices pour les bras</label><br />
+        <input type="checkbox" id="exercice-bras" name="exercice" value="Exercices pour les bras"/>
+        <label for="exercice-bras">Exercices pour les bras</label><br>
 
-        <input
-          type="checkbox"
-          id="exercice-pectoraux"
-          name="exercice"
-          value="Exercices pour les pectoraux"
-        />
+        <input type="checkbox" id="exercice-pectoraux" name="exercice" value="Exercices pour les pectoraux"/>
         <label for="exercice-pectoraux">Exercices pour les pectoraux</label
-        ><br />
+        ><br>
 
-        <input
-          type="checkbox"
-          id="exercice-abdominaux"
-          name="exercice"
-          value="Exercices pour les abdominaux"
-        />
+        <input type="checkbox" id="exercice-abdominaux" name="exercice" value="Exercices pour les abdominaux"/>
         <label for="exercice-abdominaux">Exercices pour les abdominaux</label
-        ><br />
+        ><br>
 
-        <input
-          type="checkbox"
-          id="exercice-epaules"
-          name="exercice"
-          value="Exercices pour les epaules"
-        />
+        <input type="checkbox" id="exercice-epaules" name="exercice" value="Exercices pour les epaules"/>
         <label for="exercice-epaules">Exercices pour les épaules</label
-        ><br /><br />
+        ><br><br>
       </fieldset>
 
-      <input type="submit" value="Soumettre" />
+      <input type="submit" value="Soumettre"/>
     </form>
     <script src="script.js"></script>
   </body>
