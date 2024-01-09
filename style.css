@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: 'Genos', sans-serif;
+    justify-content: center;
+    font-size: 1rem;
+    background-color: #14213D;
+    color: #E5E5E5;
+}
+
+.formulaire {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulaire h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #FCA311;
+}
+
+.questionnaire {
+    box-sizing: border-box;
+    padding: 0.5rem 2rem;
+    margin-bottom: 1rem;
+    background-color: #000000;
+    border: #FCA311 2px solid;
+    border-radius: 5px;
+}
+
+fieldset legend {
+    font-size: 1.1rem;
+    color: #FCA311;
+    text-align: center;
+}
+
+fieldset input {
+    border: none;
+    cursor: pointer;
+}
+
+fieldset input:hover {
+    background-color: #FCA311;
+}
+
+input[type="radio"]:hover + label,
+input[type="checkbox"]:hover + label {
+    color: #FCA311;
+    cursor: pointer;
+}
+
+.button {
+    background-color: #000000;
+    color: #E5E5E5;
+    border: #FCA311 2px solid;
+    border-radius: 0.4rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    margin-bottom: 1rem;
+    transition: ease-in-out 0.2s;
+}
+
+.button:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #FCA311;
+    color: #000000;
+    border: #000000 2px solid;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 1.5rem;
+    }
+
+    .formulaire {
+        width: 60%;
+    }
+
+    .formulaire h1 {
+        font-size: 4rem;
+    }
+
+    fieldset legend {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .formulaire {
+        width: 40%;
+    }
+
+    fieldset legend {
+        font-size: 2.5rem;
+    }
+    
+}
