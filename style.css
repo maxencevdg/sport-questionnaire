@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Genos&display=swap');
 
+:root {
+    --text-color: #FFFFFF;
+    --background-color: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    --flash-color: #ff790c;
+    --second-background-color: #3b536b;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -7,8 +14,8 @@ body {
     font-family: 'Genos', sans-serif;
     justify-content: center;
     font-size: 1rem;
-    background-color: #14213D;
-    color: #E5E5E5;
+    background-image: var(--background-color);
+    color: var(--text-color);
 }
 
 .formulaire {
@@ -23,21 +30,21 @@ body {
 .formulaire h1 {
     text-align: center;
     font-size: 3rem;
-    color: #FCA311;
+    color: var(--flash-color);
 }
 
 .questionnaire {
     box-sizing: border-box;
     padding: 0.5rem 2rem;
     margin-bottom: 1rem;
-    background-color: #000000;
-    border: #FCA311 2px solid;
+    background-color: var(--second-background-color);
+    border: var(--flash-color) 2px solid;
     border-radius: 5px;
 }
 
 fieldset legend {
     font-size: 1.1rem;
-    color: #FCA311;
+    color: var(--flash-color);
     text-align: center;
 }
 
@@ -47,19 +54,19 @@ fieldset input {
 }
 
 fieldset input:hover {
-    background-color: #FCA311;
+    background-color: var(--flash-color);
 }
 
 input[type="radio"]:hover + label,
 input[type="checkbox"]:hover + label {
-    color: #FCA311;
+    color: var(--flash-color);
     cursor: pointer;
 }
 
 .button {
-    background-color: #000000;
-    color: #E5E5E5;
-    border: #FCA311 2px solid;
+    background-color: var(--second-background-color);
+    color: var(--text-color);
+    border: var(--flash-color) 2px solid;
     border-radius: 0.4rem;
     font-size: 1.5rem;
     font-weight: bold;
@@ -71,9 +78,9 @@ input[type="checkbox"]:hover + label {
 .button:hover {
     cursor: pointer;
     scale: 1.1;
-    background-color: #FCA311;
-    color: #000000;
-    border: #000000 2px solid;
+    background-color: var(--flash-color);
+    color: var(--second-background-color);
+    border: var(--second-background-color) 2px solid;
 }
 
 @media screen and (min-width: 768px) {

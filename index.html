@@ -45,6 +45,11 @@
           <input type="radio" id="sexe-autre" name="sexe" value="Autre"/>
           <label for="sexe-autre">Autre</label><br><br>
 
+          <!--poids -->
+          <label>Quel est votre poids ?</label><br>
+          <input type="range" id="poids" min="0" max="200" step="0.1" value="0" oninput="poidsOutput.value = poids.value">
+          <output id="poidsOutput">0</output> kg<br><br>
+
           <!-- objectif principal -->
           <label>Quel est votre objectif principal ?</label><br>
           <input type="radio" id="objectif-poids" name="objectif" value="weightLoss" required/>
@@ -298,6 +303,6 @@
       </form>      
     </div>
 
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
   </body>
 </html>

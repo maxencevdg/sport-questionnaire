@@ -1,295 +1,14 @@
+import exercisesDatabase from "./data/exercisesDatabase.js"
+
 document.addEventListener(
   "DOMContentLoaded",
   function getQuestionnaireAnswers() {
     let form = document.querySelector("form")
 
-    let exercisesDatabase = [
-      {
-        name: "Développé militaire",
-        musclesTargeted: ["Épaules"],
-        muscleGain: { series: 4, repetitions: 8 },
-        weightLoss: { series: 3, repetitions: 12 },
-        toning: { series: 3, repetitions: 15 },
-        performanceImprovement: { series: 5, repetitions: 5 },
-      },
-      {
-        name: "Élévations latérales",
-        musclesTargeted: ["Deltoïdes latéraux"],
-        muscleGain: { series: 4, repetitions: 10 },
-        weightLoss: { series: 3, repetitions: 15 },
-        toning: { series: 3, repetitions: 20 },
-        performanceImprovement: { series: 5, repetitions: 8 },
-      },
-      {
-        name: "Élévations frontales",
-        musclesTargeted: ["Deltoïdes antérieurs"],
-        muscleGain: { series: 4, repetitions: 10 },
-        weightLoss: { series: 3, repetitions: 15 },
-        toning: { series: 3, repetitions: 20 },
-        performanceImprovement: { series: 5, repetitions: 8 },
-      },
-      {
-        name: "Oiseau",
-        musclesTargeted: ["Deltoïdes postérieurs", "Trapèzes"],
-        muscleGain: { series: 4, repetitions: 10 },
-        weightLoss: { series: 3, repetitions: 15 },
-        toning: { series: 3, repetitions: 20 },
-        performanceImprovement: { series: 5, repetitions: 8 },
-      },
-      {
-        name: "Face-Pull à la poulie",
-        musclesTargeted: ["Deltoïdes postérieurs", "Trapèzes"],
-        muscleGain: { series: 4, repetitions: 12 },
-        weightLoss: { series: 3, repetitions: 15 },
-        toning: { series: 3, repetitions: 20 },
-        performanceImprovement: { series: 5, repetitions: 10 },
-      },
-      {
-        name: "Shrug",
-        musclesTargeted: ["Trapèzes"],
-        muscleGain: { series: 4, repetitions: 10 },
-        weightLoss: { series: 3, repetitions: 12 },
-        toning: { series: 3, repetitions: 15 },
-        performanceImprovement: { series: 5, repetitions: 8 },
-      },
-      {
-        name: "Traction",
-        musclesTargeted: ["Dorsaux", "Biceps"],
-        muscleGain: { series: 4, repetitions: 8 },
-        weightLoss: { series: 3, repetitions: 10 },
-        toning: { series: 3, repetitions: 12 },
-        performanceImprovement: { series: 5, repetitions: 6 },
-      },
-      {
-        name: "Tirage horizontal",
-        musclesTargeted: ["Dorsaux", "Rhomboides"],
-        muscleGain: { series: 4, repetitions: 10 },
-        weightLoss: { series: 3, repetitions: 12 },
-        toning: { series: 3, repetitions: 15 },
-        performanceImprovement: { series: 5, repetitions: 8 },
-      },
-      {
-        name: "Tirage vertical",
-        musclesTargeted: ["Dorsaux", "Rhomboides"],
-        muscleGain: { series: 4, repetitions: 10 },
-        weightLoss: { series: 3, repetitions: 12 },
-        toning: { series: 3, repetitions: 15 },
-        performanceImprovement: { series: 5, repetitions: 8 },
-      },
-      {
-        name: "Rowing",
-        musclesTargeted: ["Dorsaux", "Rhomboides", "Biceps"],
-        muscleGain: { series: 4, repetitions: 10 },
-        weightLoss: { series: 3, repetitions: 12 },
-        toning: { series: 3, repetitions: 15 },
-        performanceImprovement: { series: 5, repetitions: 8 },
-      },
-      {
-        name: "Curl aux haltères",
-        musclesTargeted: ["Biceps"],
-        muscleGain: { series: 4, repetitions: 10 },
-        weightLoss: { series: 3, repetitions: 12 },
-        toning: { series: 3, repetitions: 15 },
-        performanceImprovement: { series: 5, repetitions: 8 },
-      },
-      {
-        name: "Curl marteau",
-        musclesTargeted: ["Biceps", "Brachial"],
-        muscleGain: { series: 4, repetitions: 10 },
-        weightLoss: { series: 3, repetitions: 12 },
-        toning: { series: 3, repetitions: 15 },
-        performanceImprovement: { series: 5, repetitions: 8 },
-      },
-      {
-        name: "Curl à la poulie",
-        musclesTargeted: ["Biceps"],
-        muscleGain: { series: 4, repetitions: 10 },
-        weightLoss: { series: 3, repetitions: 12 },
-        toning: { series: 3, repetitions: 15 },
-        performanceImprovement: { series: 5, repetitions: 8 },
-      },
-      {
-        name: "Curl pupitre",
-        musclesTargeted: ["Biceps", "Brachial"],
-        muscleGain: { series: 4, repetitions: 10 },
-        weightLoss: { series: 3, repetitions: 12 },
-        toning: { series: 3, repetitions: 15 },
-        performanceImprovement: { series: 5, repetitions: 8 },
-      },
-      {
-        name: "Développé couché",
-        musclesTargeted: ["Pectoraux", "Triceps"],
-        muscleGain: { series: 4, repetitions: 8 },
-        weightLoss: { series: 3, repetitions: 10 },
-        toning: { series: 3, repetitions: 12 },
-        performanceImprovement: { series: 5, repetitions: 6 },
-      },
-      {
-        name: "Développé incliné",
-        musclesTargeted: ["Pectoraux", "Triceps"],
-        muscleGain: { series: 4, repetitions: 8 },
-        weightLoss: { series: 3, repetitions: 10 },
-        toning: { series: 3, repetitions: 12 },
-        performanceImprovement: { series: 5, repetitions: 6 },
-      },
-      {
-        name: "Dips",
-        musclesTargeted: ["Pectoraux", "Triceps"],
-        muscleGain: { series: 4, repetitions: 10 },
-        weightLoss: { series: 3, repetitions: 12 },
-        toning: { series: 3, repetitions: 15 },
-        performanceImprovement: { series: 5, repetitions: 8 },
-      },
-      {
-        name: "Pec Deck",
-        musclesTargeted: ["Pectoraux"],
-        muscleGain: { series: 4, repetitions: 10 },
-        weightLoss: { series: 3, repetitions: 12 },
-        toning: { series: 3, repetitions: 15 },
-        performanceImprovement: { series: 5, repetitions: 8 },
-      },
-      {
-        name: "Écarté poulie basse",
-        musclesTargeted: ["Pectoraux", "Triceps"],
-        muscleGain: { series: 4, repetitions: 10 },
-        weightLoss: { series: 3, repetitions: 12 },
-        toning: { series: 3, repetitions: 15 },
-        performanceImprovement: { series: 5, repetitions: 8 },
-      },
-      {
-        name: "Écarté poulie haute",
-        musclesTargeted: ["Pectoraux"],
-        muscleGain: { series: 4, repetitions: 10 },
-        weightLoss: { series: 3, repetitions: 12 },
-        toning: { series: 3, repetitions: 15 },
-        performanceImprovement: { series: 5, repetitions: 8 },
-      },
-      {
-        name: "Écarté poulie médiane",
-        musclesTargeted: ["Pectoraux"],
-        muscleGain: { series: 4, repetitions: 10 },
-        weightLoss: { series: 3, repetitions: 12 },
-        toning: { series: 3, repetitions: 15 },
-        performanceImprovement: { series: 5, repetitions: 8 },
-      },
-      {
-        name: "Triceps à la poulie haute",
-        musclesTargeted: ["Triceps"],
-        muscleGain: { series: 4, repetitions: 10 },
-        weightLoss: { series: 3, repetitions: 12 },
-        toning: { series: 3, repetitions: 15 },
-        performanceImprovement: { series: 5, repetitions: 8 },
-      },
-      {
-        name: "Triceps à la poulie basse",
-        musclesTargeted: ["Triceps"],
-        muscleGain: { series: 4, repetitions: 10 },
-        weightLoss: { series: 3, repetitions: 12 },
-        toning: { series: 3, repetitions: 15 },
-        performanceImprovement: { series: 5, repetitions: 8 },
-      },
-      {
-        name: "Squat",
-        musclesTargeted: ["Quadriceps", "Fessiers", "Ischio-jambiers"],
-        muscleGain: { series: 4, repetitions: 8 },
-        weightLoss: { series: 3, repetitions: 10 },
-        toning: { series: 3, repetitions: 12 },
-        performanceImprovement: { series: 5, repetitions: 6 },
-      },
-      {
-        name: "Presse à cuisse",
-        musclesTargeted: ["Quadriceps", "Fessiers"],
-        muscleGain: { series: 4, repetitions: 10 },
-        weightLoss: { series: 3, repetitions: 12 },
-        toning: { series: 3, repetitions: 15 },
-        performanceImprovement: { series: 5, repetitions: 8 },
-      },
-      {
-        name: "Hip Thrust",
-        musclesTargeted: ["Fessiers", "Ischio-jambiers"],
-        muscleGain: { series: 4, repetitions: 10 },
-        weightLoss: { series: 3, repetitions: 12 },
-        toning: { series: 3, repetitions: 15 },
-        performanceImprovement: { series: 5, repetitions: 8 },
-      },
-      {
-        name: "Soulevé de terre",
-        musclesTargeted: ["Quadriceps", "Ischio-jambiers", "Fessiers"],
-        muscleGain: { series: 4, repetitions: 8 },
-        weightLoss: { series: 3, repetitions: 10 },
-        toning: { series: 3, repetitions: 12 },
-        performanceImprovement: { series: 5, repetitions: 6 },
-      },
-      {
-        name: "Leg Extension",
-        musclesTargeted: ["Quadriceps"],
-        muscleGain: { series: 4, repetitions: 10 },
-        weightLoss: { series: 3, repetitions: 12 },
-        toning: { series: 3, repetitions: 15 },
-        performanceImprovement: { series: 5, repetitions: 8 },
-      },
-      {
-        name: "Fentes Bulgares",
-        musclesTargeted: ["Quadriceps", "Fessiers", "Ischio-jambiers"],
-        muscleGain: { series: 4, repetitions: 10 },
-        weightLoss: { series: 3, repetitions: 12 },
-        toning: { series: 3, repetitions: 15 },
-        performanceImprovement: { series: 5, repetitions: 8 },
-      },
-      {
-        name: "Leg Curl",
-        musclesTargeted: ["Ischio-jambiers"],
-        muscleGain: { series: 4, repetitions: 10 },
-        weightLoss: { series: 3, repetitions: 12 },
-        toning: { series: 3, repetitions: 15 },
-        performanceImprovement: { series: 5, repetitions: 8 },
-      },
-      {
-        name: "Crunch à la poulie",
-        musclesTargeted: ["Abdominaux"],
-        muscleGain: { series: 4, repetitions: 15 },
-        weightLoss: { series: 3, repetitions: 20 },
-        toning: { series: 3, repetitions: 25 },
-        performanceImprovement: { series: 5, repetitions: 12 },
-      },
-      {
-        name: "Roulette à abdominaux",
-        musclesTargeted: ["Abdominaux"],
-        muscleGain: { series: 4, repetitions: 12 },
-        weightLoss: { series: 3, repetitions: 15 },
-        toning: { series: 3, repetitions: 18 },
-        performanceImprovement: { series: 5, repetitions: 10 },
-      },
-      {
-        name: "Crunch à la machine",
-        musclesTargeted: ["Abdominaux"],
-        muscleGain: { series: 4, repetitions: 15 },
-        weightLoss: { series: 3, repetitions: 20 },
-        toning: { series: 3, repetitions: 25 },
-        performanceImprovement: { series: 5, repetitions: 12 },
-      },
-      {
-        name: "Flexions latérales à la poulie basse",
-        musclesTargeted: ["Obliques"],
-        muscleGain: { series: 4, repetitions: 12 },
-        weightLoss: { series: 3, repetitions: 15 },
-        toning: { series: 3, repetitions: 18 },
-        performanceImprovement: { series: 5, repetitions: 10 },
-      },
-      {
-        name: "Rotation du buste à la poulie",
-        musclesTargeted: ["Obliques"],
-        muscleGain: { series: 4, repetitions: 12 },
-        weightLoss: { series: 3, repetitions: 15 },
-        toning: { series: 3, repetitions: 18 },
-        performanceImprovement: { series: 5, repetitions: 10 },
-      },
-    ]
-
     // retourne les noms des exercices liés au muscle ciblé :
     function filterByMuscle(muscle) {
       return exercisesDatabase
-        .filter((exercise) => exercise.musclesTargeted.includes(muscle))
+        .filter((exercise) => exercise.musclesTargeted[0] === muscle)
         .map((exercise) => exercise.name)
     }
 
@@ -301,13 +20,12 @@ document.addEventListener(
     let exercisesForDeltoidePosterieurs = filterByMuscle("Deltoïdes postérieurs")
     let exercisesForTrapezes = filterByMuscle("Trapèzes")
     let exercisesForEpaulesTrapezes = [...new Set([].concat(
-          exercisesForEpaules,
-          exercisesForDeltoideLateraux,
-          exercisesForDeltoideAnterieurs,
-          exercisesForDeltoidePosterieurs,
-          exercisesForTrapezes
-        )
-      ),
+      exercisesForEpaules,
+      exercisesForDeltoideLateraux,
+      exercisesForDeltoideAnterieurs,
+      exercisesForDeltoidePosterieurs,
+      exercisesForTrapezes
+      )),
     ]
 
     // seance dos/biceps
@@ -316,11 +34,11 @@ document.addEventListener(
     let exercisesForBiceps = filterByMuscle("Biceps")
     let exercisesForBrachial = filterByMuscle("Brachial")
     let exercisesForDosBiceps = [...new Set([].concat(
-          exercisesForDorsaux,
-          exercisesForRhomboides,
-          exercisesForBiceps,
-          exercisesForBrachial
-        )),
+      exercisesForDorsaux,
+      exercisesForRhomboides,
+      exercisesForBiceps,
+      exercisesForBrachial
+      )),
     ]
 
     // seance pectoraux/triceps
@@ -337,10 +55,10 @@ document.addEventListener(
     let exercisesForFessiers = filterByMuscle("Fessiers")
     let exercisesForIschioJambiers = filterByMuscle("Ischio-jambiers")
     let exercisesForJambes = [...new Set([].concat(
-          exercisesForQuadriceps,
-          exercisesForFessiers,
-          exercisesForIschioJambiers
-        )),
+      exercisesForQuadriceps,
+      exercisesForFessiers,
+      exercisesForIschioJambiers
+      )),
     ]
 
     // seance abdominaux/obliques
@@ -391,11 +109,11 @@ document.addEventListener(
         let seriesRepetitions = {}
         let objectifValue = data["objectif"]
         for (let i = 0; i < exercicesAll.length; i++) {
-            let exerciseName = exercicesAll[i]
-            if (exercisesDatabase[i] && exercisesDatabase[i][objectifValue]) {
-                let exerciseObjectif = exercisesDatabase[i][objectifValue]
-                seriesRepetitions[exerciseName] = exerciseObjectif
-            }
+          let exerciseName = exercicesAll[i]
+          if (exercisesDatabase[i] && exercisesDatabase[i][objectifValue]) {
+            let exerciseObjectif = exercisesDatabase[i][objectifValue]
+            seriesRepetitions[exerciseName] = exerciseObjectif
+          }
         }
         return seriesRepetitions
       }
@@ -407,24 +125,61 @@ document.addEventListener(
         let workoutPlan = []
         let workoutProgram = frequency()
         let objectifDatabase = seriesRepetitions()
-    
+      
         // Convertir les clés de workoutProgram en tableau pour obtenir l'ordre des jours
         let days = Object.keys(workoutProgram)
-    
+      
         // Pour chaque jour on choisit un exercice au hasard et on l'ajoute au workoutPlan tant que le temps total respecte la durée souhaitée
         for (let day of days) {
-            let dayExercises = {}
-            
-            while ((totalTime + timeForExercise) < maxSecondsPerDay) {
-                let randomExercise = exercicesAll[Math.floor(Math.random() * exercicesAll.length)]
-                if (!dayExercises[randomExercise]) {
-                    dayExercises[randomExercise] = objectifDatabase[randomExercise]
-                    totalTime += dayExercises[randomExercise].series * timeForExercise
-                }
+          let dayExercises = {}
+          let frequenceSouhaitee = parseInt(data["frequence-souhaitee"])
+          let exercisesForDay;
+        
+          if (frequenceSouhaitee <= 2) {
+            exercisesForDay = exercicesAll;
+          } else if (frequenceSouhaitee === 3) {
+            switch (day) {
+              case 'jour-1':
+                exercisesForDay = [...exercisesForPectoraux, ...exercisesForDorsaux, ...exercisesForRhomboides, ...exercisesForEpaulesTrapezes];
+                break;
+              case 'jour-2':
+                exercisesForDay = [...exercisesForJambes];
+                break;
+              case 'jour-3':
+                exercisesForDay = [...exercisesForBiceps, ...exercisesForBrachial, ...exercisesForTriceps];
+                break;
             }
-            
-            workoutPlan.push({ [day]: dayExercises })
-            totalTime = 0
+          } else if (frequenceSouhaitee >= 4) {
+            let dayNumber = parseInt(day.split('-')[1]);
+            switch (dayNumber % 4) {
+              case 0:
+                exercisesForDay = [...exercisesForPectorauxTriceps];
+                break;
+              case 1:
+                exercisesForDay = [...exercisesForDosBiceps];
+                break;
+              case 2:
+                exercisesForDay = [...exercisesForJambes];
+                break;
+              case 3:
+                exercisesForDay = [...exercisesForEpaulesTrapezes];
+                break;
+            }
+          }
+        
+          let exercisesDone = new Set();
+
+          while ((totalTime + timeForExercise) < maxSecondsPerDay && exercisesDone.size < exercisesForDay.length) {
+            let randomExercise = exercisesForDay[Math.floor(Math.random() * exercisesForDay.length)]
+            if (!dayExercises[randomExercise]) {
+              dayExercises[randomExercise] = objectifDatabase[randomExercise]
+              totalTime += dayExercises[randomExercise].series * timeForExercise
+              exercisesDone.add(randomExercise);
+            }
+          }
+        
+          workoutPlan.push({ [day]: dayExercises })
+          totalTime = 0
         }
         return workoutPlan
       }
@@ -439,3 +194,22 @@ document.addEventListener(
     })
   }
 )
+
+// concernant le programme en lui meme, il y a bien le bon nombre d'exercices par jour en fonction du temps disponible, 
+// mais il faudrait qu'il y ait un lien entre les différents exercices concernant les muscles ciblés.
+
+// il faudra ecrire un texte afin de mettre en garde les personnes, donner des conseils supplémentaires, et autres informations complémentaires 
+// qui seraient utiles grâce aux données recueillies dans le questionnaire. 
+// Il faudra également donner des conseils sur la récupération, les étirements, et l'importance de l'échauffement.
+// De plus il faudra développer une partie sur le cardio qui sera plus ou moins importante en fonction des profils.
+// Enfin, il faudra donner des conseils sur l'alimentation et l'hydratation en fonction des objectifs.
+
+
+// une seance = fullbody 
+// deux seances = fullbody
+// trois seances = pecs(=exercisesForPectoraux)/dos(=exercisesForDorsaux + exercisesForRhomboides)/(epaules(=exercisesForEpaulesTrapezes)) - jambes(=exercisesForJambes) - bras(=exercisesForBiceps + exercisesForBrachial + exercisesForTriceps) => un exo abdos/obliques(=exercisesForAbdominauxObliques) chaque seance
+// quatre seances = pecs/triceps(=exercisesForPectorauxTriceps) - dos/biceps(=exercisesForDosBiceps) - jambes(=exercisesForJambes) - epaules/trapezes(=exercisesForEpaulesTrapezes) => un exo abdos/obliques(=exercisesForAbdominauxObliques) chaque seance
+// cinq/six/sept seances = meme chose que pour 4 seances mais en boucle => un exo abdos/obliques chaque seance
+
+
+// concernant le fullbody, il se fera de cette manière : => on créé 6 séances types avec un exo par groupe musculaire voir plus ou moins en fonction du temps (ordre de priorité homme : dos, pecs, epaules, bras, jambes, abdos/obliques -- ordre de priorité femme : jambes, abdos/obliques, dos, epaules, bras, pecs)

@@ -1,0 +1,7 @@
+les différents programmes d'entrainement fonctionnent. Néanmoins il n'y a pas d'exercices attribués pour les abdos.
+prochaine etape, réaliser la page de reveal des résultats comprenant le texte et les différents programmes d'entrainement
+
+un ajout agréable serait de faire un programme sur plusieurs semaines car cela permettrait de faire plus d'exercices différents,
+ce qui permettra aux muscles ciblés d'être solicités de différentes manières. 
+
+les séances fullbody de faible durées ne sont pas pertinentes du peu de marge de manoeuvre possible donc il faudra faire un petit disclaimer
