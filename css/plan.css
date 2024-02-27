@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos&display=swap');
+
+:root {
+    --text-color: #FFFFFF;
+    --background-color: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    --flash-color: #ff790c;
+    --second-background-color: #3b536b;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: 'Genos', sans-serif;
+    justify-content: center;
+    font-size: 1rem;
+    background-image: url('../images/wallpaper.jpg');
+    color: var(--text-color);
+}
+
+.wallpaper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.wallpaper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: var(--background-color);
+    opacity: 0.95;
+    z-index: -1;
+}
