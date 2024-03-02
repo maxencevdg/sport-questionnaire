@@ -1,0 +1,112 @@
+{
+    "age": {
+        "-18": "À cet âge, le corps est encore en croissance et en développement. Il est essentiel de mettre l'accent sur la technique appropriée, la sécurité et l'utilisation de charges légères pour éviter d'entraver la croissance osseuse. Encourager la participation à une variété d'activités physiques pour favoriser le développement global, en évitant une spécialisation précoce.",
+        "18-24": "Cette tranche d'âge bénéficie souvent d'un potentiel élevé pour la croissance musculaire. Les séances d'entraînement peuvent inclure un mélange d'entraînement en force, en hypertrophie et en endurance. C'est une période propice pour établir des habitudes d'entraînement régulières et l'importance de la nutrition.",
+        "25-34": "À ce stade, il est important de maintenir la force et la condition physique globale tout en prêtant attention à la prévention des blessures. Les responsabilités professionnelles et familiales peuvent augmenter, ce qui peut nécessiter une gestion efficace du temps pour maintenir un programme d'entraînement.",
+        "35-44": "La musculation est cruciale pour prévenir la perte musculaire liée à l'âge et maintenir un métabolisme actif. La gestion du poids devient également un facteur important. Une attention particulière à la prévention des blessures, y compris le renforcement des zones vulnérables comme les articulations.",
+        "45-54": "La musculation devient essentielle pour prévenir la perte de masse musculaire et maintenir la force. Une attention accrue à la flexibilité et à la mobilité pour prévenir la raideur et améliorer la qualité de vie quotidienne.",
+        "55+": "La musculation peut aider à prévenir la perte osseuse liée à l'âge et réduire le risque de fractures. Les programmes d'entraînement doivent être adaptés en fonction des capacités individuelles, en mettant l'accent sur la sécurité et le bien-être général."
+    },
+    "sexe": {
+        "Homme": "",
+        "Femme": "",
+        "Autre": ""
+    },
+    "imc": {
+        "-18.4": "Votre IMC est inférieur à la normale. Il est important de consulter un professionnel de la santé pour évaluer les causes possibles et déterminer un plan d'action approprié. Néanmoins, la musculation peut être bénéfique pour améliorer la force et la masse musculaire.",
+        "18.5-24.9": "Votre IMC est dans la plage normale, ce qui indique un poids sain pour votre taille. La musculation peut être bénéfique pour maintenir la masse musculaire, améliorer la force et la composition corporelle. Cependant, il est possible que l'IMC ne soit plus pertinant dans le temps avec l'augmentation de la masse musculaire. Nous recommandons de se fier à d'autres indicateurs de santé et de composition corporelle tel que le pourcentage de masse grasse ainsi que la masse musculaire.",
+        "25-29.9": "Votre IMC indique un surpoids. La musculation peut être bénéfique pour la gestion du poids, en augmentant le métabolisme et en favorisant la perte de graisse tout en maintenant la masse musculaire. Cependant, il est possible que vous ayez une masse musculaire importante. L'IMC serait donc moins pertinant pour votre profil. Nous recommandons de se fier à d'autres indicateurs de santé et de composition corporelle tel que le pourcentage de masse grasse ainsi que la masse musculaire.",
+        "30-40": "Votre IMC indique une obésité. La musculation peut être bénéfique pour la gestion du poids, en augmentant le métabolisme et en favorisant la perte de graisse tout en maintenant la masse musculaire. Cependant, il est possible que vous ayez une masse musculaire importante. L'IMC serait donc moins pertinant pour votre profil. Nous recommandons de se fier à d'autres indicateurs de santé et de composition corporelle tel que le pourcentage de masse grasse ainsi que la masse musculaire.",
+        "40+": "Votre IMC indique une obésité sévère. La musculation peut être bénéfique pour la gestion du poids, en augmentant le métabolisme et en favorisant la perte de graisse tout en maintenant la masse musculaire."
+    },
+    "objectif": {
+        "weightLoss": "La musculation peut augmenter le métabolisme, contribuant ainsi à la perte de poids en favorisant la combustion des calories même au repos. En gagnant du muscle tout en perdant de la graisse, la musculation peut améliorer la composition corporelle et donner une apparence plus tonique.",
+        "muscleGain": "La musculation axée sur des charges plus lourdes et des séries de répétitions plus basses est cruciale pour stimuler la croissance musculaire. Un régime alimentaire riche en protéines et en calories peut soutenir la croissance musculaire.",
+        "toning": "L'entraînement en musculation avec des séries de répétitions moyennes et des charges modérées peut contribuer à la définition musculaire et à la tonification. L'intégration de l'entraînement cardiovasculaire et d'une alimentation équilibrée est également importante pour atteindre des objectifs de tonification.",
+        "performanceImprovement": "La musculation peut être adaptée pour améliorer la performance dans des domaines spécifiques, que ce soit l'endurance, la force explosive ou la puissance. La mise en place de cycles d'entraînement périodisés, alternant des phases d'intensité et de récupération, peut maximiser les gains de performance."
+    },
+    "antecedents-medicaux": {
+        "Oui": "Il est crucial de prendre des précautions spécifiques avant de commencer un programme de musculation. La musculation peut offrir de nombreux avantages pour la santé, mais elle doit être adaptée en fonction de la condition médicale spécifique",
+        "Non": ""
+    },
+    "type": {
+        "Hypertension": "La musculation peut contribuer à abaisser la pression artérielle au fil du temps. L'entraînement en résistance peut améliorer la santé cardiovasculaire et la gestion du poids. Cependant, il faut limiter les exercices avec des charges lourdes qui pourraient entraîner une tension artérielle excessive. Des pauses régulières et une respiration contrôlée sont importantes.",
+        "Diabète": "La musculation peut améliorer la sensibilité à l'insuline et aider à contrôler la glycémie. Elle peut également contribuer à la gestion du poids. Cependant, il faut surveiller la glycémie avant, pendant et après l'entraînement. De plus, évitez les séances d'entraînement trop intenses qui pourraient affecter négativement la glycémie.",
+        "Problèmes cardiaques": "Un programme de musculation bien conçu peut renforcer le cœur, améliorer la circulation sanguine et aider à la gestion du poids. Cependant, une consultation médicale préalable est essentielle. De plus, évitez les exercices très intensifs et favoriser un entraînement modéré. Surveillez les signes de détresse cardiaque.",
+        "Problèmes articulaires": "La musculation peut renforcer les muscles qui soutiennent les articulations, contribuant ainsi à réduire la douleur et à améliorer la fonction articulaire. Cependant, éviter les mouvements qui mettent trop de pression sur les articulations affectées. Optez pour des exercices à faible impact et utiliser une forme appropriée.",
+        "Autre": "La musculation peut avoir des avantages pour diverses conditions médicales, notamment la gestion du stress, la prévention de l'ostéoporose, etc. Cependant, il faut adapter le programme en fonction des limitations médicales spécifiques. Une communication ouverte avec les professionnels de la santé est cruciale."
+    },
+    "medicaments": {
+        "Oui": "Il est essentiel de consulter un professionnel de la santé avant de commencer un programme de musculation, surtout si vous prenez des médicaments. Certains médicaments peuvent avoir des effets sur le système cardiovasculaire, la pression artérielle, la glycémie, etc. De plus, certains médicaments peuvent affecter la capacité du corps à récupérer après l'exercice. Une surveillance médicale est essentielle pour assurer la sécurité et l'efficacité de l'entraînement.",
+        "Non": ""
+    },
+    "fumer": {
+        "Oui": "Le tabagisme est associé à une diminution de la capacité aérobie, ce qui peut affecter la performance lors des exercices cardiovasculaires. Cela peut entraîner une fatigue plus rapide et une récupération plus lente entre les séances d'entraînement. De plus, la nicotine présente dans les cigarettes peut entraîner une constriction des vaisseaux sanguins, réduisant ainsi le flux sanguin vers les muscles. Cela peut compromettre l'apport en oxygène et en nutriments essentiels nécessaires pendant l'entraînement. Les fumeurs peuvent également avoir une récupération plus lente après l'exercice en raison de la réduction du transport d'oxygène vers les muscles et de l'effet négatif sur la capacité du corps à éliminer les déchets métaboliques. Il faut aussi prendre en compte que le tabagisme peut affaiblir les tissus conjonctifs et les articulations, augmentant ainsi le risque de blessures, en particulier lors de l'entraînement en résistance avec des charges lourdes. Enfin, certains chercheurs suggèrent que le tabagisme peut affecter la synthèse protéique musculaire, ce qui pourrait potentiellement limiter les gains musculaires.",
+        "Non": ""
+    },
+    "allergies": {
+        "Oui": "",
+        "Non": ""
+    },
+    "precision-allergie": {
+        "Allergie au gluten": "",
+        "Allergie aux produits laitiers": "",
+        "Végétarien(ne)": "",
+        "Végétalien(ne)": "",
+        "Autre": ""
+    },
+    "frequence-actuelle": {
+        "Jamais": "",
+        "1-2 fois": "",
+        "3-4 fois": "",
+        "5+ fois": ""
+    },
+    "exercice-pratique": {
+        "Cardio (course, vélo, natation)": "",
+        "Musculation": "",
+        "Sports collectifs": "",
+        "Yoga/Pilates": "",
+        "Sports de combat": ""
+    },
+    "experience": {
+        "Débutant(e)": "",
+        "Intermédiaire": "",
+        "Avancé(e)": ""
+    },
+    "duree": {
+        "30": "",
+        "45": "",
+        "60": "",
+        "90": "",
+        "120": ""
+    },
+    "frequence-souhaitee": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+        "6": "",
+        "7": ""
+    },
+    "abonnement": {
+        "Oui": "",
+        "Non": ""
+    },
+    "equipement": {
+        "Oui": "",
+        "Non": ""
+    },
+    "preferences": {
+        "Oui": "",
+        "Non": ""
+    },
+    "exercice": {
+        "Exercices pour les jambes": "",
+        "Exercices pour le dos": "",
+        "Exercices pour les bras": "",
+        "Exercices pour les pectoraux": "",
+        "Exercices pour les abdominaux": "",
+        "Exercices pour les épaules": ""
+    }
+}

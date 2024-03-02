@@ -51,6 +51,11 @@
             <input type="range" id="poids" min="0" max="200" step="0.1" value="0" oninput="poidsOutput.value = poids.value">
             <output id="poidsOutput">0</output> kg<br><br>
 
+            <!-- taille -->
+            <label>Quelle est votre taille ?</label><br>
+            <input type="range" id="taille" min="0" max="200" step="0.1" value="0" oninput="tailleOutput.value = taille.value">
+            <output id="tailleOutput">0</output> cm<br><br>
+
             <!-- objectif principal -->
             <label>Quel est votre objectif principal ?</label><br>
             <input type="radio" id="objectif-poids" name="objectif" value="weightLoss" required/>
@@ -194,17 +199,6 @@
           <fieldset class="questionnaire">
             <legend>Préférences et contraintes</legend>
 
-            <!-- séances d'entraînement -->
-            <label>
-              Préférez-vous des séances d'entraînement longues et intenses ou
-              courtes et intenses ?
-            </label><br>
-            <input type="radio" id="seance-longue" name="seance" value="Longue"/>
-            <label for="seance-longue">Longues et intenses</label><br>
-
-            <input type="radio" id="seance-courte" name="seance" value="Courte"/>
-            <label for="seance-courte">Courtes et intenses</label><br><br>
-
             <!-- durée idéale -->
             <label>
               Quelle est la durée idéale pour une séance d'entraînement ?
@@ -305,6 +299,121 @@
       </div>
     </div>
 
+    <script>
+      let list = {
+        "age" : [
+          "-18" = "",
+          "18-24" = "",
+          "25-34" = "",
+          "35-44" = "",
+          "45-54" = "",
+          "55+" = ""
+        ],
+        "sexe" : [
+          "Homme" = "",
+          "Femme" = "",
+          "Autre" = ""
+        ],
+        "imc" : [
+          "0-18.4" = "",
+          "18.5-24.9" = "",
+          "25-29.9" = "",
+          "30-40" = "",
+          "40+" = ""
+        ],
+        "objectif" : [
+          "weightLoss" = "",
+          "muscleGain" = "",
+          "toning" = "",
+          "performanceImprovement" = ""
+        ],
+        "antecedents-medicaux" : [
+          "Oui" = "",
+          "Non" = ""
+        ],
+        "type" : [
+          "Hypertension" = "",
+          "Diabète" = "",
+          "Problèmes cardiaques" = "",
+          "Problèmes articulaires" = "",
+          "Autre" = ""
+        ],
+        "medicaments" : [
+          "Oui" = "",
+          "Non" = ""
+        ],
+        "fumer" : [
+          "Oui" = "",
+          "Non" = ""
+        ],
+        "allergies" : [
+          "Oui" = "",
+          "Non" = ""
+        ],
+        "precision-allergie" : [
+          "Allergie au gluten" = "",
+          "Allergie aux produits laitiers" = "",
+          "Végétarien(ne)" = "",
+          "Végétalien(ne)" = "",
+          "Autre" = ""
+        ],
+        "frequence-actuelle" : [
+          "Jamais" = "",
+          "1-2 fois" = "",
+          "3-4 fois" = "",
+          "5+ fois" = ""
+        ],
+        "exercice-pratique" : [
+          "Cardio (course, vélo, natation)" = "",
+          "Musculation" = "",
+          "Sports collectifs" = "",
+          "Yoga/Pilates" = "",
+          "Sports de combat" = ""
+        ],
+        "experience" : [
+          "Débutant(e)" = "",
+          "Intermédiaire" = "",
+          "Avancé(e)" = ""
+        ],
+        "duree" : [
+          "30" = "",
+          "45" = "",
+          "60" = "",
+          "90" = "",
+          "120" = ""
+        ],
+        "frequence-souhaitee" : [
+          "1" = "",
+          "2" = "",
+          "3" = "",
+          "4" = "",
+          "5" = "",
+          "6" = "",
+          "7" = ""
+        ],
+        "abonnement" : [
+          "Oui" = "",
+          "Non" = ""
+        ],
+        "equipement" : [
+          "Oui" = "",
+          "Non" = ""
+        ],
+        "preferences" : [
+          "Oui" = "",
+          "Non" = ""
+        ],
+        "exercice" : [
+          "Exercices pour les jambes" = "",
+          "Exercices pour le dos" = "",
+          "Exercices pour les bras" = "",
+          "Exercices pour les pectoraux" = "",
+          "Exercices pour les abdominaux" = "",
+          "Exercices pour les épaules" = ""
+        ]
+      }
+    </script>
     <script type="module" src="js/script.js"></script>
+    <script type="module" src="js/textResult.js"></script>
   </body>
 </html>

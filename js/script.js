@@ -192,6 +192,83 @@ document.addEventListener(
       console.log("workoutPlan")
       console.log(createWorkoutPlan())
 
+      // Envoie les informations du formulaire à la page results.html
+      // age
+      let age = event.target.elements["age"].value
+      localStorage.setItem("age", age)
+
+      // sexe
+      let sexe = event.target.elements["sexe"].value
+      localStorage.setItem("sexe", sexe)
+
+      // poids
+      let poids = document.querySelector('#poids').value
+      localStorage.setItem('poids', poids)
+
+      // taille
+      let taille = document.querySelector('#taille').value
+      localStorage.setItem('taille', taille)
+      
+      // objectif pricipal
+      let objectif = event.target.elements["objectif"].value
+      localStorage.setItem("objectif", objectif)
+
+      // antecedents medicaux
+      let antecedentsMedicaux = event.target.elements["antecedents-medicaux"].value
+      localStorage.setItem("antecedentsMedicaux", antecedentsMedicaux)
+
+      // type antecedents medicaux
+      let typeAntecedentsMedicaux = event.target.elements["type"].value
+      localStorage.setItem("typeAntecedentsMedicaux", typeAntecedentsMedicaux)
+
+      // medicaments
+      let medicaments = event.target.elements["medicaments"].value
+      localStorage.setItem("medicaments", medicaments)
+
+      // fumer 
+      let fumer = event.target.elements["fumer"].value
+      localStorage.setItem("fumer", fumer)
+
+      // restrictions alimentaires/allegies
+      let restrictionsAlimentaires = event.target.elements["allergies"].value
+      localStorage.setItem("restrictionsAlimentaires", restrictionsAlimentaires)
+
+      // precision restrictions alimentaires/allegies
+      let precisionRestrictionsAlimentaires = event.target.elements["precision-allergie"].value
+      localStorage.setItem("precisionRestrictionsAlimentaires", precisionRestrictionsAlimentaires)
+
+      // frequence actuelle sport
+      let frequenceActuelleSport = event.target.elements["frequence-actuelle"].value
+      localStorage.setItem("frequenceActuelleSport", frequenceActuelleSport)
+
+      // type sport pratique
+      let typeSportPratique = event.target.elements["exercice-pratique"].value
+      localStorage.setItem("typeSportPratique", typeSportPratique)
+
+      // expérience musculation
+      let experienceMusculation = event.target.elements["experience"].value
+      localStorage.setItem("experienceMusculation", experienceMusculation)
+
+      // duree entrainement
+      let dureeEntrainement = event.target.elements["duree"].value
+      localStorage.setItem("dureeEntrainement", dureeEntrainement)
+
+      // frequence souhaitee
+      let frequenceSouhaitee = event.target.elements["frequence-souhaitee"].value
+      localStorage.setItem("frequenceSouhaitee", frequenceSouhaitee)
+
+      // abonnement
+      let abonnement = event.target.elements["abonnement"].value
+      localStorage.setItem("abonnement", abonnement)
+
+      // equipement domicile
+      let equipementDomicile = event.target.elements["equipement"].value
+      localStorage.setItem("equipementDomicile", equipementDomicile)
+
+      // preferences exercices/groupes musculaires
+      let preferencesExercices = event.target.elements["preferences"].value
+      localStorage.setItem("preferencesExercices", preferencesExercices)
+      
       // Redirige vers la page results.html
       window.location.href = "./html/results.html"
     })
