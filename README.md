@@ -7,3 +7,7 @@ This project is an interactive web page designed to create personalized fitness 
 - HTML
 - CSS
 - JavaScript
+
+
+# Warning 
+The project is not completed yet ! Come back whenever you can to check on the project's progress.
